@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
+}
+
+.elegant-title {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-weight: 400;
+  color: #8a7a5c;
+}
+
+/* Estilos personalizados adicionales */
+.bg-beige {
+  background-color: #d8cdb0;
+}
+
+.bg-beige-light {
+  background-color: rgba(216, 205, 176, 0.3);
+}
+
+.text-beige-dark {
+  color: #8a7a5c;
+}
+
+.hover\:text-beige-dark:hover {
+  color: #8a7a5c;
+}
+
+.bg-beige-dark {
+  background-color: #8a7a5c;
+}
+
+.hover\:bg-beige-darker:hover {
+  background-color: #776a4e;
+}
+
+.focus\:ring-beige:focus {
+  --tw-ring-color: rgba(216, 205, 176, 1);
+}
+
+.text-amber-700 {
+  color: #8a7a5c;
+}
+
+.text-amber-800 {
+  color: #776a4e;
+}
+
+.bg-amber-700 {
+  background-color: #8a7a5c;
+}
+
+.bg-amber-100\/50 {
+  background-color: rgba(216, 205, 176, 0.3);
+}
+
+.hover\:bg-amber-800:hover {
+  background-color: #776a4e;
+}
+
+.focus\:ring-amber-500:focus {
+  --tw-ring-color: rgba(216, 205, 176, 1);
+}
+
+.hover\:text-amber-700:hover {
+  color: #8a7a5c;
+}
+
+.hover\:text-amber-900:hover {
+  color: #665c43;
+}
+
+/* Títulos en secciones con fondo beige */
+.bg-beige h2.elegant-title,
+.bg-beige h3.elegant-title,
+.bg-beige-dark h2.elegant-title,
+.bg-beige-dark h3.elegant-title,
+.bg-amber-700 h2.elegant-title,
+.bg-amber-700 h3.elegant-title {
+  color: white;
+}
